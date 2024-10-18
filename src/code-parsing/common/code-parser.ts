@@ -109,6 +109,16 @@ export interface Type {
    * The interfaces that the type implements. This is only applicable if the type is a class or interface.
    */
   interfaces: Type[];
+}
+
+/**
+ * This is the interface that is used to represent the details of a type.
+ */
+export interface TypeDetails {
+  /**
+   * The core type information.
+   */
+  type: Type;
   /**
    * The components of the type. This can be fields, methods, etc.
    */
@@ -163,7 +173,7 @@ export interface LanguageHandler {
 // end TODO
 
 export class CodeParser {
-  constructor(private languageHandler: LanguageHandler) {}
+  constructor(private readonly languageHandler: LanguageHandler) {}
 
   /**
    * Parses the provided code.
