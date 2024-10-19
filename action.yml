@@ -1,23 +1,23 @@
-name: 'The name of your action here'
+name: 'Documentation Gen'
 description: 'Provide a description here'
 author: 'Your name or organization here'
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-  icon: 'heart'
-  color: 'red'
+  icon: 'edit-3'
+  color: 'green'
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  source-directory:
+    description: 'The path to the directory containing the source code that should be parsed into documentation files.'
     required: true
-    default: '1000'
+    default: './'
 
 # Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
+#outputs:
+#  time:
+#    description: 'Your output description here'
 
 runs:
   using: node20
