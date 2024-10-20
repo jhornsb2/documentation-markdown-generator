@@ -5,8 +5,6 @@ package com.documentation.generator.java;
 
 import org.junit.jupiter.api.Test;
 
-import com.documentation.generator.java.App;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
